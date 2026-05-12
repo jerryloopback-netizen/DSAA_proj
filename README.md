@@ -5,6 +5,7 @@
 ## 目录说明
 
 - `project_problems/clear_problem/`：已经清洗好的 Markdown 题面，去除了网页 UI、账号信息、提交面板等无关内容，可以直接阅读和用于开发。
+- `project_problems/clear_problem/submissionInterface.md`：提交接口和编码规范摘要，编码时和提交前都需要检查。
 - `project_problems/origin_problem/`：原始网页下载文件，包括 HTML 和浏览器保存的资源目录，仅作为备份。
 
 ## 题目简述
@@ -20,4 +21,4 @@
 
 ## 使用建议
 
-先阅读 `project_problems/clear_problem/Project 总则.md` 了解统一提交规则，再按题号阅读对应 Markdown 题面。开发时注意不要添加 `package` 声明，只使用 Java 标准库，并严格按照题面要求输出，避免输出调试信息。
+先阅读 `project_problems/clear_problem/Project 总则.md` 了解统一提交规则，再阅读 `project_problems/clear_problem/submissionInterface.md` 确认文件名、主类名、输入输出接口和本地运行方式，最后按题号阅读对应 Markdown 题面。开发时注意不要添加 `package` 声明，只使用 Java 标准库，并严格按照题面要求输出，避免输出调试信息。

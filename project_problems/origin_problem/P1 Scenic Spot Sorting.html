@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://cs205b.muiao.com/ -->
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="icon" href="https://cs205b.muiao.com/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS205b Final Project</title>
+  <script defer="" referrerpolicy="origin" src="./P1 Scenic Spot Sorting_files/s.js.下载"></script><script type="module" crossorigin="" src="./P1 Scenic Spot Sorting_files/index-Cl7Nx-IO.js.下载"></script>
+  <link rel="stylesheet" crossorigin="" href="./P1 Scenic Spot Sorting_files/index-BEDgbRFx.css">
+<script data-cfasync="false" nonce="7307a8f9-9590-4a99-a459-217fd2d05f46">try{(function(w,d){!function(F,G,H,I){if(F.zaraz)console.error("zaraz is loaded twice");else{F[H]=F[H]||{};F[H].executed=[];F.zaraz={deferred:[],listeners:[]};F.zaraz._v="5882";F.zaraz._n="7307a8f9-9590-4a99-a459-217fd2d05f46";F.zaraz.q=[];F.zaraz._f=function(J){return async function(){var K=Array.prototype.slice.call(arguments);F.zaraz.q.push({m:J,a:K})}};for(const L of["track","set","debug"])F.zaraz[L]=F.zaraz._f(L);F.zaraz.init=()=>{var M=G.getElementsByTagName(I)[0],N=G.createElement(I),O=G.getElementsByTagName("title")[0];O&&(F[H].t=G.getElementsByTagName("title")[0].text);F[H].x=Math.random();F[H].w=F.screen.width;F[H].h=F.screen.height;F[H].j=F.innerHeight;F[H].e=F.innerWidth;F[H].l=F.location.href;F[H].r=G.referrer;F[H].k=F.screen.colorDepth;F[H].n=G.characterSet;F[H].o=(new Date).getTimezoneOffset();if(F.dataLayer)for(const P of Object.entries(Object.entries(dataLayer).reduce((Q,R)=>({...Q[1],...R[1]}),{})))zaraz.set(P[0],P[1],{scope:"page"});F[H].q=[];for(;F.zaraz.q.length;){const S=F.zaraz.q.shift();F[H].q.push(S)}N.defer=!0;for(const T of[localStorage,sessionStorage])Object.keys(T||{}).filter(V=>V.startsWith("_zaraz_")).forEach(U=>{try{F[H]["z_"+U.slice(7)]=JSON.parse(T.getItem(U))}catch{F[H]["z_"+U.slice(7)]=T.getItem(U)}});N.referrerPolicy="origin";N.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(F[H])));M.parentNode.insertBefore(N,M)};["complete","interactive"].includes(G.readyState)?zaraz.init():F.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async bO=>new Promise(bP=>{if(bO){bO.e&&bO.e.forEach(bQ=>{try{const bR=d.querySelector("script[nonce]"),bS=bR?.nonce||bR?.getAttribute("nonce"),bT=d.createElement("script");bS&&(bT.nonce=bS);bT.innerHTML=bQ;bT.onload=()=>{d.head.removeChild(bT)};d.head.appendChild(bT)}catch(bU){console.error(`Error executing script: ${bQ}\n`,bU)}});Promise.allSettled((bO.f||[]).map(bV=>fetch(bV[0],bV[1])))}bP()});zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script><script>(function(w,d){})(window,document)</script><script>(function(w,d){;w.zarazData.executed.push("Pageview");})(window,document)</script><script>(function(w,d){{x=new XMLHttpRequest,x.withCredentials=!0,x.open("POST","https://stats.g.doubleclick.net/g/collect?t=dc&aip=1&_r=3&v=1&_v=j86&tid=https%3A%2F%2Fcs205b.muiao.com%2F&cid=e47ba22e-1be4-4660-8bbf-50bdb2953686&_u=KGDAAEADQAAAAC%7E&z=271293095",!0),x.onreadystatechange=function(){if (4 == x.readyState) {const domain = x.responseText.trim();if (domain.startsWith("1g") && domain.length > 2) {fetch("https://www.google.com/ads/ga-audiences?t=sr&aip=1&_r=4&v=1&_v=j86&tid=https%3A%2F%2Fcs205b.muiao.com%2F&cid=e47ba22e-1be4-4660-8bbf-50bdb2953686&_u=KGDAAEADQAAAAC%7E&z=271293095&slf_rd=1".replace("www.google.com", "www.google."+domain.slice(2)));}}},x.send();}})(window,document)</script><script>(function(w,d){{(function(w,d){zaraz.__zarazMCListeners={"google-analytics_v4_Eupz":["visibilityChange"]};})(window,document);}})(window,document)</script><script>(function(w,d){;w.zarazData.executed.push("Pageview");})(window,document)</script><script>(function(w,d){{(function(w,d){zaraz.__zarazMCListeners={"google-analytics_v4_Eupz":["visibilityChange"]};})(window,document);}})(window,document)</script><script>(function(w,d){{(function(w,d){zaraz.__zarazMCListeners={"google-analytics_v4_Eupz":["visibilityChange"]};})(window,document);}})(window,document)</script></head>
+
+<body>
+  <div id="app" data-v-app=""><div class="shell"><aside class="sidebar"><div class="brand logo-brand"><img src="./P1 Scenic Spot Sorting_files/Logo-horiz.png" alt="SUSTech"><div class="brand-title"><strong>CS203B Algorithms and Data Structures</strong><small>Final Project</small></div></div><section class="side-section"><h2>Account</h2><div class="identity-card"><div class="avatar">罗</div><div class="identity"><strong>罗浩轩</strong><small>12410902 · 数据科学与大数据技术</small><span class="role">student</span></div></div><button class="text-button" type="button">Sign out</button></section><section class="side-section"><h2>Team</h2><div class="identity"><strong>代码怎么跑都队</strong><small>3/3 members</small><span class="role">open</span></div><!----></section><section><a class="sidebar-download" href="https://cs205b.muiao.com/api/resources/student-handbook.pdf" target="_blank" rel="noopener" download=""> Download project handbook </a></section><section class="side-section deadline-section"><h2>Deadlines</h2><div class="deadline-row"><strong>Registration</strong><b class="">6d 6h</b><small>5月18日 23:59</small></div><div class="deadline-row"><strong>Team lock</strong><b class="">8d 6h</b><small>5月20日 23:59</small></div><div class="deadline-row"><strong>Submission</strong><b class="">30d 6h</b><small>6月11日 23:59</small></div></section></aside><main class="workspace"><!----><!----><!----><section id="problem-workspace" class="section problem-section"><div class="section-heading"><div><p class="eyebrow">Problem workspace</p><h2>Scenic Spot Sorting</h2></div><div class="button-row"><button class="secondary" type="button">Back to team</button><span class="submit-state">Lock a team before submitting</span></div></div><nav class="problem-tabs" aria-label="Problems"><button type="button" class=""><b>RULES</b><span>Project guide</span></button><button type="button" class="active"><b>P1</b><span>Scenic Spot Sorting</span></button><button type="button" class=""><b>P2</b><span>Check-in Queue</span></button><button type="button" class=""><b>P3</b><span>Travel Note Lookup</span></button><button type="button" class=""><b>P4</b><span>Stay Budget Ranking</span></button><button type="button" class=""><b>P5</b><span>Transit Network Connector</span></button><button type="button" class=""><b>P6</b><span>Metro Connectivity Check</span></button></nav><article class="problem-panel reading-panel"><div class="problem-main reading-main"><p class="eyebrow">ScenicSorter.java · ScenicSorter</p><div class="markdown-body"><h1>P1 Scenic Spot Sorting</h1>
+<p>出发前，你需要根据时间预算和金钱预算筛选候选景点，并按推荐优先级输出前若干个景点。</p>
+<h2>任务</h2>
+<p>给定 <code>N</code> 个景点和 <code>Q</code> 个查询。每个查询给出最多输出数量 <code>K</code>、最大花费 <code>maxCost</code> 和最大游览时间 <code>maxDuration</code>。只保留满足：</p>
+<ul><li><code>cost &lt;= maxCost</code></li><li><code>duration &lt;= maxDuration</code></li></ul>
+<p>的景点，并按以下规则排序：</p>
+<ol><li><code>rating</code> 降序。</li><li><code>distance</code> 升序。</li><li><code>cost</code> 升序。</li><li><code>id</code> 字典序升序。</li></ol>
+<h2>输入格式</h2>
+<pre><code class="language-text">N Q
+id rating distance cost duration
+...
+K maxCost maxDuration
+...</code></pre>
+<h2>输出格式</h2>
+<p>每个查询输出一行，包含最多 <code>K</code> 个景点 ID，用空格分隔。若没有景点满足条件，输出：</p>
+<pre><code class="language-text">NONE</code></pre>
+<h2>示例</h2>
+<p>输入：</p>
+<pre><code class="language-text">6 2
+A01 95 2 120 90
+A02 95 1 180 120
+A03 88 3 60 45
+A04 95 1 150 60
+A05 70 8 40 30
+A06 88 2 80 75
+3 160 100
+4 200 200</code></pre>
+<p>输出：</p>
+<pre><code class="language-text">A04 A01 A06
+A04 A02 A01 A06</code></pre>
+<p>解释：第一个查询中 <code>A02</code> 的花费超过 <code>160</code>，被过滤；剩余景点按评分、距离、花费和 ID 排序后取前三个。</p>
+<h2>复杂度建议</h2>
+<p>可以对每个查询收集候选景点并使用 <code>Collections.sort</code> 或 <code>Arrays.sort</code>。压力样例会包含较多景点，请避免 <code>O(N^2)</code> 手写排序。</p></div></div><aside class="problem-aside"><div class="problem-visual" data-problem="p1"><header class="visual-header"><p class="eyebrow">Visualization</p><h3>Filtering and ranking destinations</h3><p>Discard spots outside the time or budget limits, then apply the exact multi-key ordering.</p></header><div class="sort-bars"><span style="--h:42%;">A03<br>88</span><span style="--h:78%;">A05<br>95</span><span style="--h:68%;">A02<br>95</span><span class="muted" style="--h:34%;">A04<br>cost</span></div><div class="visual-caption">A04 is filtered out; remaining spots are ordered by rating, distance, cost, then ID.</div></div><div class="download-panel"><div class="mini-heading tight"><div><h4>Resource package</h4><small>Includes public samples and starter code</small></div></div><button class="primary" type="button"> Download problem ZIP </button><!----></div><div class="submission-panel"><label class="file-input"><span>Select ScenicSorter.java</span><input type="file" accept=".java"></label><button class="primary" type="button" disabled=""> Upload and check </button><div class="result-box muted"><strong>No run yet</strong><!----></div><!----><!----></div><div class="ranking-panel"><div class="mini-heading"><div><h4>Problem ranking</h4><small>final scores · hidden</small></div><!----></div><p class="muted-line">Ranking is hidden by the teacher.</p></div></aside></article></section><!----></main></div></div>
+
+
+</body></html>
